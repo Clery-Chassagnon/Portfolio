@@ -92,7 +92,6 @@ $(window).on('load', function() {
         loop: true,
         margin: 0,
 		dots: false,
-		margin: 0,
 		nav:true,
 		center: true,
 		startPosition: 1,

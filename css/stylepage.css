@@ -1,18 +1,20 @@
 @font-face {
     font-family: "Caviar Dreams";
-    src: url('font/CaviarDream.ttf');
+    src: url('font/CaviarDreams.ttf');
 }
 @font-face {
     font-family: "Caviar Dreams";
     font-style: bold;
-    src: url('font/CaviarDream_Bold.ttf');
+    src: url('font/CaviarDreams_Bold.ttf');
 }
 @font-face {
     font-family: "Caviar Dreams";
     font-style: italic;
-    src: url('font/CaviarDream_Italic.ttf');
+    src: url('font/CaviarDreams_Italic.ttf');
 }
+
 body{
+    font-family: 'Varela', sans-serif;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -100,3 +102,5 @@ nav a {
     position: relative;
     cursor: pointer;
 }
+
+
