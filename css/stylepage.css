@@ -45,6 +45,7 @@ a.active {
 li {
     display:inline-block;
     min-width:237px;
+    z-index: 0;
 }
 
 li a.active:after {
@@ -102,6 +103,7 @@ nav a {
     width: 100%;
     height: 50%;
     margin-top: 8%;
+    z-index: -1;
 }
 
 .content {
@@ -411,9 +413,6 @@ nav a {
     }
 }
 
-
-
-
 @keyframes checked-anim {
     50% {
         width: 3000px;
@@ -485,7 +484,7 @@ a:focus {
 
 #menu-toggle:checked + #trigger + #burger:before {
     width: 20px;
-    top: 0px;
+    top: -2px;
     left: 18px;
     transform: rotate(45deg) translateX(-5px);
     transition: transform .2s ease;
