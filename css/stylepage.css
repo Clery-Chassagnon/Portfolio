@@ -103,6 +103,7 @@ nav a {
     width: 100%;
     height: 50%;
     margin-top: 8%;
+    z-index: -1;
 }
 
 .content {
@@ -123,7 +124,6 @@ nav a {
     -moz-animation: blurFadeInOut 2s ease-in backwards;
     -ms-animation: blurFadeInOut 2s ease-in backwards;
     animation: blurFadeInOut 2s ease-in backwards;
-    z-index: -1;
 }
 .container h2.text1 {
     -webkit-animation-delay: 0s;
@@ -202,9 +202,6 @@ nav a {
     -ms-animation-delay: 9.5s;
     animation-delay: 9.5s;
 }
-.container a{
-    z-index: 0;
-}
 
 .circle {
     position: absolute;
@@ -216,8 +213,8 @@ nav a {
     line-height: 20px;
     width: 200px;
     height: 200px;
-    background: #6a6a6a;
-    color: #fff;
+    background: #019E4A;
+    color: white;
     font-size: 30px;
     border-radius: 100%;
     -webkit-animation: fadeInRotate 1s linear 10s backwards;
@@ -237,8 +234,8 @@ nav a {
     padding-top: 105px;
     height: 250px;
     font-size: 35px;
-    background: #6a6a6a;
-    color: #fff;
+    background: #019E4A;
+    color: white;
 }
 
 
@@ -462,7 +459,7 @@ a:focus {
     height: 5px;
     transition: .2s ease;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }
 #trigger {
     height: 25px;
@@ -510,7 +507,6 @@ a:focus {
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     animation: not-checked-anim .2s both;
     transition: .2s;
-    z-index: 1;
 }
 #menu-toggle:checked + #trigger + #burger + #menu {
     animation: checked-anim 1s ease both;
