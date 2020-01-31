@@ -50,9 +50,9 @@ li {
 li a.active:after {
     content: '';
     display: block;
-    margin: auto;
+    margin-left: 75px;
     height: 1px;
-    width: 0;
+    width: 10px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
 }
