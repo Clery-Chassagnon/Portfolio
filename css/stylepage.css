@@ -47,15 +47,15 @@ li.active {
 li.active a:after {
     content: '';
     display: block;
-    margin-left: 75px;
+    margin-left: 30%;
     height: 1px;
-    width: 10px;
+    width: 1px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
 }
 li.active a:hover:after {
     width: 45%;
-    margin-left: 45%;
+    margin-left: 30%;
     background: #019E4A;
 }
 nav {
@@ -420,6 +420,7 @@ nav.active a {
         border-radius: 0;
     }
 }
+
 @keyframes not-checked-anim {
     0% {
         width: 100%;
@@ -438,11 +439,10 @@ nav.active a {
 }
 
 li.burger-content {
-    margin: 150px 0 -55px 830px;
-    width: 1px;
+    margin: 8% 0 -3% 45%;
+    width: 207px;
     display: none;
 }
-
 .burger-content a {
     text-decoration: none;
     text-transform: none;
@@ -504,14 +504,14 @@ li.burger-content {
 #menu {
     position: fixed;
     margin: 0; padding: 0;
-    top: 0px;
-    width: 110px;
-    height: 110px;
+    top: 0;
+    width: 6%;
+    height: 11%;
     background-color: #6a6a6a;
     border-bottom-right-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    animation: not-checked-anim .2s ease both;
+    animation: not-checked-anim .2s both;
     animation-duration: 1s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     transition: .2s;
     z-index: 1;
 }
