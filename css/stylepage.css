@@ -26,11 +26,7 @@ body{
     margin: 0;
 }
 
-a.active:hover {
-    color: #019E4A;
-    text-decoration: none;
-}
-a.active {
+.active a {
     color: #019E4A;
     text-transform: uppercase;
     text-align: center;
@@ -42,13 +38,13 @@ a.active {
     padding: 0 20px;
 }
 
-li {
+li.active {
     display:inline-block;
     min-width:237px;
     z-index: 0;
 }
 
-li a.active:after {
+li.active a:after {
     content: '';
     display: block;
     margin-left: 75px;
@@ -57,7 +53,7 @@ li a.active:after {
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
 }
-li a:hover:after {
+li.active a:hover:after {
     width: 45%;
     margin-left: 45%;
     background: #019E4A;
@@ -83,11 +79,11 @@ nav ul {
     margin-left: auto;
 
 }
-nav li {
+nav li.active {
     position: relative;
     padding: 30px 15px;
 }
-nav a {
+nav.active a {
     padding: 2px 0px;
     color: white;
     font-size: 18px;
@@ -416,11 +412,8 @@ nav a {
     }
 }
 
+
 @keyframes checked-anim {
-    50% {
-        width: 3000px;
-        height: 3000px;
-    }
     100% {
         width: 100%;
         height: 100%;
@@ -429,28 +422,34 @@ nav a {
 }
 @keyframes not-checked-anim {
     0% {
-        width: 3000px;
-        height: 3000px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    10% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 }
 
-.menu-content {
-    margin: 75px 0 -55px 0;
-    color: #fff;
-    font-size: 1;
-    text-transform: none;
+.menu{
     list-style: none;
-    outline: 0;
+}
+
+li.burger-content {
+    margin: 150px 0 -55px 830px;
+    width: 1px;
     display: none;
 }
-li {
-    width: 230px;
-    text-indent: 56px;}
-a:focus {
-    display: block;
-    color: #333;
-    background-color: #eee;
-    transition: all .5s;
+
+.burger-content a {
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Varela', sans-serif;    
+    color: #fff;
+    font-size: 300%;
+    text-align: center;
 }
 
 #trigger, #burger, #burger:before, #burger:after {
@@ -483,6 +482,7 @@ a:focus {
     top: 40px;
     transform: rotate(180deg);
     transition: transform .2s ease;
+    transition-duration: 1s;
 }
 
 #menu-toggle:checked + #trigger + #burger:before {
@@ -491,6 +491,7 @@ a:focus {
     left: 18px;
     transform: rotate(45deg) translateX(-5px);
     transition: transform .2s ease;
+    transition-duration: 1s;
 }
 #menu-toggle:checked + #trigger + #burger:after {
     width: 20px;
@@ -498,6 +499,7 @@ a:focus {
     left: 18px;
     transform: rotate(-45deg) translateX(-5px);
     transition: transform .2s ease;
+    transition-duration: 1s;
 }
 #menu {
     position: fixed;
@@ -508,12 +510,14 @@ a:focus {
     background-color: #6a6a6a;
     border-bottom-right-radius: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    animation: not-checked-anim .2s both;
+    animation: not-checked-anim .2s ease both;
+    animation-duration: 1s;
     transition: .2s;
     z-index: 1;
 }
 #menu-toggle:checked + #trigger + #burger + #menu {
     animation: checked-anim 1s ease both;
+    animation-duration: 1s;
 }
 #menu-toggle:checked + #trigger ~ #menu > li, a {
     display: block;
