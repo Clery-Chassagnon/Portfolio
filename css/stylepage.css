@@ -520,7 +520,7 @@ li.burger-content {
     animation-duration: 1s;
 }
 #menu-toggle:checked + #trigger ~ #menu > li, a {
-    display: block;
+    display:block
 }
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
