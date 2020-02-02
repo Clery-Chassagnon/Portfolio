@@ -269,7 +269,6 @@ nav li.active {
         -webkit-transform: scale(1) rotate(0deg);
     }
 }
-/**/
 
 @-moz-keyframes blurFadeInOut {
     0% {
@@ -324,7 +323,6 @@ nav li.active {
         -moz-transform: scale(1) rotate(0deg);
     }
 }
-/**/
 
 @keyframes blurFadeInOut {
     0% {
@@ -425,10 +423,14 @@ li.burger-content {
     text-align: center;
 }
 
+.burger-content a:hover{
+    color:blue;
+}
+
 #trigger, #burger, #burger:before, #burger:after {
     position: fixed;
-    top: 30px;
-    left: 25px;
+    top: 5%;
+    left: 1.5%;
     background: #fff;
     width: 30px;
     height: 5px;
@@ -442,17 +444,17 @@ li.burger-content {
 }
 #burger:before {
     content: " ";
-    top: 40px;
-    left: 25px;
+    top: 3%;
+    left: 1.5%;
 }
 #burger:after {
     content: " ";
-    top: 50px;
-    left: 25px;
+    top: 4%;
+    left: 1.5%;
 }
 
 #menu-toggle:checked + #trigger + #burger {
-    top: 40px;
+    top: 4%;
     transform: rotate(180deg);
     transition: transform .2s ease;
     transition-duration: 1s;
@@ -482,10 +484,8 @@ li.burger-content {
     height: 11%;
     background-color: #6a6a6a;
     border-bottom-right-radius: 100%;
-    animation: not-checked-anim .2s both;
+    animation: not-checked-anim 1s ease both;
     animation-duration: 1s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    transition: .2s;
     z-index: 1;
 }
 #menu-toggle:checked + #trigger + #burger + #menu {
