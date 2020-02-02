@@ -16,7 +16,7 @@
 body{
     font-family: 'Varela', sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,6 @@ body{
     padding: 0;
     margin: 0;
 }
-
 .active a {
     color: #019E4A;
     text-transform: uppercase;
@@ -71,6 +70,7 @@ nav ul {
     display: flex;
     margin-top: 0.2%;
     margin-left: 20%;
+    
 }
 nav li.active {
     position: relative;
@@ -102,6 +102,7 @@ nav li.active {
     -moz-animation: blurFadeInOut 2s ease-in backwards;
     -ms-animation: blurFadeInOut 2s ease-in backwards;
     animation: blurFadeInOut 2s ease-in backwards;
+    outline: solid;
     z-index: -1;
 }
 .container h2.text1 {
@@ -185,20 +186,16 @@ nav li.active {
     z-index: 0;
 }
 
-.circle {
+.box {
     position: relative;
-    left: 50%;
-    bottom: -50%;
-    margin-left: -9%;
-    text-align: center;
-    padding-top: 6%;
-    width: 150px;
-    height: 150px;
-    background: #6a6a6a;
-    color: #fff;
-    font-size: 100%;
-    border-radius: 100%;
-    /*-webkit-animation: fadeInRotate 1s linear 10s backwards;
+    width: 12%;
+    margin: 25% 45%;
+    padding: 1%;
+    border: 1px solid #019E4A;
+    border-radius: 20%/50%;
+    color: #019E4A;
+    text-decoration: none;
+    -webkit-animation: fadeInRotate 1s linear 10s backwards;
     -moz-animation: fadeInRotate 1s linear 10s backwards;
     -ms-animation: fadeInRotate 1s linear 10s backwards;
     animation: fadeInRotate 1s linear 10s backwards;
@@ -206,19 +203,13 @@ nav li.active {
     -moz-transform: scale(1) rotate(0deg);
     -o-transform: scale(1) rotate(0deg);
     -ms-transform: scale(1) rotate(0deg);
-    transform: scale(1) rotate(0deg);*/
+    transform: scale(1) rotate(0deg);
 }
-.circle:hover {
-    margin-left: -100px;
-    bottom: -225px;
-    width: 250px;
-    padding-top: 105px;
-    height: 250px;
-    font-size: 35px;
-    background: #6a6a6a;
+.box:hover {
+    background: rgba(1,158,74,1);
+    text-decoration: none;
     color: #fff;
 }
-
 
 @-webkit-keyframes blurFadeInOut {
     0% {
