@@ -424,7 +424,7 @@ li.burger-content {
 }
 
 .burger-content a:hover{
-    color:blue;
+    color:black;
 }
 
 #trigger, #burger, #burger:before, #burger:after {
@@ -497,4 +497,219 @@ li.burger-content {
 }
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     display: none;
+}
+
+
+
+/*A propos*/
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,900');
+
+/* Body and some general stuff */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.super_container
+{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-bottom: 45px;
+	padding-right: 41px;
+	padding-top: 97px;
+}
+
+.background_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* Content */
+
+.main_content_outer
+{
+	width: 100%;
+	height: 100%;
+	background: #282828;
+	overflow: hidden;
+}
+
+.general_info
+{
+    /*019E4A*/
+	width: 473px;
+	height: 100%;
+	background: #057a3b;
+}
+.general_info_image
+{
+	width: 100%;
+	height: 473px;
+}
+.general_info_content
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 77px;
+	padding-top: 49px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.general_info_content_inner
+{
+	width: 100%;
+	max-height: 100%;
+}
+.general_info_title
+{
+	font-size: 30px;
+	font-weight: 600;
+	color: #282828;
+	line-height: 1.2;
+}
+.general_info_list
+{
+	margin-top: 34px;
+}
+.general_info_list li:not(:last-child)
+{
+	margin-bottom: 15px;
+}
+.general_info_icon
+{
+	width: 21px;
+	height: 21px;
+	margin-right: 24px;
+}
+.general_info_icon img
+{
+	max-width: 100%;
+}
+.general_info_text,
+.general_info_text a
+{
+	font-size: 14px;
+	color: #100f3a;
+	line-height: 1.2;
+}
+.general_info_text a
+{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.general_info_text a:hover
+{
+	color: white;
+}
+.general_info_text span
+{
+	color: #282828;
+}
+.social_container
+{
+	margin-top: 26px;
+	padding-left: 38px;
+}
+.social_container ul li:not(:last-child)
+{
+	margin-right: 28px;
+}
+.social_container ul li a i
+{
+	font-size: 18px;
+	color: #8d8b9b;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.social_container ul li a i:hover
+{
+	color: #FFFFFF;
+}
+.main_content
+{
+	width: calc(100% - 473px);
+	height: 100%;
+	padding-left: 82px;
+	padding-right: 30px;
+}
+.main_title_container
+{
+	width: 100%;
+	height: 193px;
+}
+.main_subtitle
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #7a798c;
+	line-height: 0.75;
+}
+.main_title
+{
+	font-size: 92px;
+	font-weight: 800;
+	color: #100f3a;
+	line-height: 0.75;
+	margin-top: 12px;
+}
+.about_content
+{
+	
+}
+.main_content_scroll
+{
+	margin-top: 72px;
+	max-height: calc(100% - 193px - 72px - 30px);
+	padding-right: 60px;
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_draggerRail, .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail
+{
+	background: #FFFFFF;
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+{
+	width: 3px;
+	background: #8583e1;
+}
+.about_title
+{
+	font-size: 30px;
+	font-weight: 700;
+	color: #100f3a;
+}
+.about_text
+{
+    color: #057a3b;
+	margin-top: 31px;
 }
