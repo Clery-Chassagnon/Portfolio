@@ -818,7 +818,7 @@ div
 }
 
 /****************
-    Education   
+    Experience   
 ****************/
 
 .super_container_experience
@@ -826,10 +826,9 @@ div
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	padding-left: 40px;
-	padding-bottom: 45px;
+    padding-left: 40px;
+    padding-top: 97px;
 	padding-right: 41px;
-	padding-top: 97px;
 }
 
 /* Content */
@@ -910,3 +909,120 @@ div
 {
 	margin-top: 18px;
 }
+
+/****************
+    Skills 
+****************/
+
+.super_container_skills
+{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	padding-left: 40px;
+    padding-right: 41px;
+}
+
+/* Content */
+
+.main_content_outer_skills
+{
+	width: 100%;
+	height: 100%;
+	background: #282828;
+	overflow: hidden;
+}
+.main_content_skills
+{
+	width: 130%;
+	height: 100%;
+	padding-left: 82px;
+	padding-right: 30px;
+}
+.main_title_container_skills
+{
+	width: 100%;
+	height: 183px;
+}
+.main_title_skills
+{
+	font-size: 72px;
+	font-weight: 800;
+	color: #04612F;
+	line-height: 0.75;
+	margin-top: 15px;
+	margin-left: -4px;
+}
+.main_content_scroll_skills
+{
+	margin-top: 134px;
+	max-height: calc(100% - 183px - 134px);
+	padding-right: 100px;
+}
+
+#competences {
+    min-height: 100vh;
+    padding-bottom: 40px; }
+    @media screen and (max-width: 639px) {
+      #competences {
+        min-height: auto; } }
+    @media screen and (min-width: 639px) and (max-width: 959px) {
+      #competences {
+        min-height: auto; } }
+    #competences #compcontenu {
+      width: 950px;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      @media screen and (max-width: 639px) {
+        #competences #compcontenu {
+          width: calc( 100% - 40px);
+          margin: 0 20px;
+          height: auto;
+          text-align: center; } }
+      @media screen and (min-width: 639px) and (max-width: 959px) {
+        #competences #compcontenu {
+          width: calc( 100% - 100px);
+          margin: 0 20px; } }
+      #competences #compcontenu p {
+        margin: 0 40px;
+        font-family: "Raleway", sans-serif; }
+        @media screen and (max-width: 639px) {
+          #competences #compcontenu p {
+            margin: 0 5px; } }
+        #competences #compcontenu p.note6 {
+          font-size: 1.2em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note6 {
+              font-size: 1.1em; } }
+        #competences #compcontenu p.note5 {
+          font-size: 1.6em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note5 {
+              font-size: 1.3em; } }
+        #competences #compcontenu p.note4 {
+          font-size: 2em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note4 {
+              font-size: 1.5em; } }
+        #competences #compcontenu p.note3 {
+          font-size: 2.4em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note3 {
+              font-size: 1.7em; } }
+        #competences #compcontenu p.note2 {
+          font-size: 2.8em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note2 {
+              font-size: 1.9em; } }
+        #competences #compcontenu p.note1 {
+          font-size: 3.2em; }
+          @media screen and (max-width: 639px) {
+            #competences #compcontenu p.note1 {
+              font-size: 2.1em; } }
+        #competences #compcontenu p.note1 {
+          font-weight: bold; }
