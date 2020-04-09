@@ -522,7 +522,7 @@ div
 
 .super_container_description
 {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	padding-left: 40px;
@@ -711,7 +711,7 @@ div
 
 .super_container_education
 {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	padding-left: 40px;
@@ -823,12 +823,12 @@ div
 
 .super_container_experience
 {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
     padding-left: 40px;
     padding-top: 97px;
-	padding-right: 41px;
+    padding-right: 41px;
 }
 
 /* Content */
@@ -916,7 +916,7 @@ div
 
 .super_container_skills
 {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	padding-left: 40px;
@@ -958,6 +958,21 @@ div
 	margin-top: 134px;
 	max-height: calc(100% - 183px - 134px);
 	padding-right: 100px;
+}
+
+.CV_link {
+    width: 20%;
+    margin: -7.5% 45%;
+    padding: 1%;
+    border: 1px solid #019E4A;
+    border-radius: 15%/50%;
+    color: #019E4A;
+    text-decoration: none;
+}
+.CV_link:hover {
+    background: rgba(1,158,74,1);
+    text-decoration: none;
+    color: #fff;
 }
 
 #competences {
@@ -1026,3 +1041,4 @@ div
               font-size: 2.1em; } }
         #competences #compcontenu p.note1 {
           font-weight: bold; }
+
