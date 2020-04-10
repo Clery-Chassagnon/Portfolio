@@ -1116,7 +1116,7 @@ div
   .portfolio_area .single_gallery::before {
     width: 351px;
     height: 351px;
-    background: #0181F5;
+    background: rgba(1,158,74,1);
     content: '';
     position: absolute;
     left: 0;
@@ -1249,7 +1249,7 @@ div
   .portfolio_area .single_gallery .gallery_hover .hover_inner span {
     display: block;
     font-size: 14px;
-    color: #B3D9FC;
+    color: #444444;
     font-weight: 400;
     font-family: "Alata", sans-serif;
     margin-bottom: 13px;
@@ -1457,19 +1457,19 @@ div
   
   /* line 34, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
   .work_details_area .details_catagory_wrap .single_catagory .social_links a:hover {
-    color: #0181F5 !important;
+    color: rgba(1,158,74,1) !important;
   }
   
   /* line 39, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
   .work_details_area .details_catagory_wrap .single_catagory .porject_btn {
     background: transparent;
-    border-color: #0181F5;
-    color: #0181F5 !important;
+    border-color: rgba(1,158,74,1);
+    color: rgba(1,158,74,1) !important;
   }
   
   /* line 43, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
   .work_details_area .details_catagory_wrap .single_catagory .porject_btn:hover {
-    color: #0181F5 !important;
+    color: rgba(1,158,74,1) !important;
     background: #fff;
     border-color: #fff;
   }
