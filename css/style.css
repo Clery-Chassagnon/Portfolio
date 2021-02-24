@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-  font-family: "Qualy Bold";
-  src: url("/font/Qualy_Bold.woff") format("woff");
-}
+  font-family: 'Qualy Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Qualy_Bold'), url("/font/Qualy_Bold.woff") format('woff');
+  }
 
 html {
 
