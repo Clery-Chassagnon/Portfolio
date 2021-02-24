@@ -1,54 +1,418 @@
-<!DOCTYPE html >
-<html lang="fr" >
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio Cléry Chassagnon</title>
-        <meta name="description" content="Portfolio Cléry Chassagnon, Game programmer / Developpeur Back-End au Puy-en-velay.">
-        <meta name="keywords" content="portfolio, clery, chassagnon, Cléry Chassagnon, Puy, Puy-en-velay, etudiant ">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/stylepage.css" type="text/css" media="screen" title="design">
-        <link rel=" icon" type="image/png" href="" width="80px" height="40px">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">ACCUEIL</a></li>
-                <li class="active"><a href="apropos.html">À PROPOS</a></li>
-                <li class="active"><a href="portfolio.html">PORTFOLIO</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Portfolio Cléry Chassagnon</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="design">
+    <link rel=" icon" type="image/png" href="" width="80px" height="40px">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://use.fontawesome.com/34c30caed7.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/34c30caed7.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html?#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?#presentation">A propos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html?#cv">Mes formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?#competences">Mes compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?#experiences">Mes experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?#portfolio">Mon Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html?#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
-        <input type="checkbox" id="menu-toggle"/>
-        <label id="trigger" for="menu-toggle"></label>
-        <label id="burger" for="menu-toggle"></label>
-        <ul id="menu">
-            <li class="burger-content"><a href="index.html">Accueil</a></li>
-            <li class="burger-content"><a href="apropos.html">À propos</aclass="menu-content"></li>
-            <li class="burger-content"><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-
-        <div class="container">
-            <div class="content">
-                <h2 class="text1">Cléry CHASSAGNON</h2>
-                <h2 class="text2">Étudiant</h2>
-                <h2 class="text3">Game Programmer</h2>
-                <h2 class="text4">Développeur back-end</h2>
-                <h2 class="text5">
+    </header>
+    <div class="accueil">
+        <div class="pres">
+            <div class="container-titre">
+                <div class="title-anim-1">
                     <span>Cléry CHASSAGNON</span>
-                    <span><br/>Game Programmer</span>
-                    <span>|</span>
-                    <span>Développeur back-end</span>
-                    <span>|</span>
-                    <span>Étudiant</span>
-                </h2>
-                <a class="box" href="apropos.html">En savoir plus</a>
+                </div>
+                <br>
+                <div class="title-anim-1bis">
+                    <span>Game Programmer </span>
+                </div>
+                <div class="title-anim-2bis">
+                    <span>Developpeur Back-End</span>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="presentation" id="presentation">
+        <div class="rectvert">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="photo col-xl-5 col-lg-12">
+                        <h1>Qui suis-je ?</h1>
+                        <img class="text-center mx-auto" src="images/Photo.png">
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-lg-12">
+                        <div class="about">
+                            <p>Bonjour, je m'appelle <strong>Cléry Chassagnon</strong>.
+                                Je suis actuellement en Licence professionnelle
+                                à l'IUT
+                                du Puy-En-Velay. J'aimerais plus tard
+                                devenir Game Programmer ou
+                                Développeur Back-end. En effet je suis
+                                passionné par la création et la
+                                conception de jeux depuis tout petit.
+                                Mais c'est durant ma formation que
+                                m'est apparu le souhait de devenir Game
+                                Programmer, mais aussi Développeur
+                                Back-end. J'ai découvert le
+                                développement back-end et cela me
+                                plaît énormement car cela mêle la
+                                réflexion et la rigeur du développement.
+                                Je suis passionné par le sport, la
+                                musique, les jeux video mais aussi la
+                                lecture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  text-center mx-auto">
+                    <a href="PDF\CV Clery Chassagnon.pdf" target=_blank class="text-lg-center liencv"> Télécharger mon
+                        cv</a>
+                </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <div class="cv" id="cv">
+        <div class="container">
+            <h1 class="titreformation">Mes formations</h1>
+            <div class="row rowformation"data-aos="fade-right" 
+            data-aos-duration="3000">
+                <div class="col-xl-3 col-sm-12">
+                    <img class="imgformation text-center" src="images/Formations/IUT.png">
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <p class="datediplome">2020-2021</p>
+                    <p class="nomdiplome"><span>LP Métiers de l’informatique : </span> conduite de
+                        projets</p>
+                    <p class="lieudiplome">IUT CLERMONT-FERRAND, ANTENNE DU PUY-EN-VELAY (43)</p>
+
+                </div>
+            </div>
+            <div class="row rowformation"data-aos="fade-right" 
+            data-aos-duration="3000">
+                <div class="col-xl-3 col-sm-12">
+                    <img class="imgformation text-center " src="images/Formations/IUT.png">
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <p class="datediplome">2018 - 2020</p>
+                    <p class="nomdiplome"><span>DUT INFORMATIQUE GRAPHIQUE</span> (Spécialité Programmation)</p>
+                    <p class="lieudiplome">IUT CLERMONT-FERRAND, ANTENNE DU PUY-EN-VELAY (43)</p>
+
+                </div>
+            </div>
+            <div class="row rowformation"data-aos="fade-right"
+            data-aos-duration="3000">
+                <div class="col-xl-3 col-sm-12">
+                    <img class="imgformation text-center" src="images/Formations/Notre Dame du Chateau.png">
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <p class="datediplome"> 2018 - 2020</p>
+                    <p class="nomdiplome"><span>BACCALAURÉAT SCIENTIFIQUE</span> ( Sciences de l'Ingénieur spécialité
+                        Mathématiques)</p>
+                    <p class="lieudiplome">
+                        LYCÉE NOTRE-DAME-DU-CHÂTEAU, MONISTROL-SUR-LOIRE (43)</p>
+
+                </div>
+            </div>
+            <div class="row rowformation"data-aos="fade-right"
+            data-aos-duration="3000">
+                <div class="col-xl-3 col-sm-12">
+                    <img class="imgformation text-center" src="images/Formations/BIA.png">
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <p class="datediplome">2016</p>
+                    <p class="nomdiplome"><span>BIA</span> (Brevet D'initiation Aéronautique)</p>
+                    <p class="lieudiplome">
+                        MONISTROL-SUR-LOIRE (43))</p>
+
+                </div>
+            </div>
+            <div class="row rowformation"data-aos="fade-right"
+            data-aos-duration="3000">
+                <div class="col-xl-3 col-sm-12">
+                    <img class="imgformation text-center" src="images/Formations/PSC1.png">
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <p class="datediplome">2015</p>
+                    <p class="nomdiplome"><span>
+                            PSC1 </span> (Prévention et secours civiques de niveau 1)</p>
+                    <p class="lieudiplome">
+                        MONISTROL-SUR-LOIRE (43)</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="competences" id="competences">
+        <div class="container">
+            <h1 class="titrecompetence">MES COMPéTENCES</h1>
+            <div class=" text-center justify-content-center">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg"src="https://img.icons8.com/bubbles/500/000000/controller.png"/>
+                                <p class="titrecomp">Développement jeux vidéo</p>
+                                <p class="comp">Blueprint<br>C#<br>C++</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg" src="https://img.icons8.com/bubbles/500/000000/domain.png">
+                                <p class="titrecomp">Développement web</p>
+                                <p class="comp">HTML/CSS<br>PHP<br>SQL<br>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg" src="https://img.icons8.com/officel/500/000000/command-line.png">
+                                <p class="titrecomp">Ligne de commande</p>
+                                <p class="comp">Bash<br>Git</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg" src="https://img.icons8.com/bubbles/500/000000/programming-flag.png"">
+                                <p class="titrecomp">Autre langages </p>
+                                <p class="comp">Java<br>Python<br>Arduino</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12 text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg" src="https://img.icons8.com/dusk/500/000000/software-box.png">
+                                <p class="titrecomp">Logiciels </p>
+                                <p class="comp">Unity<br>Unreal Engine<br>Symfony<br>Blender<br>3ds Max</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12 text-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <div class="cadre1">
+                            <div class="cadre2">
+                                <img class="rubriquesimg" src="https://img.icons8.com/bubbles/500/000000/language.png">
+                                <p class="titrecomp">Langues</p>
+                                <p class="comp">Anglais <br> Espagnol <br> Français
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experiences" id="experiences">
+        <div class="container">
+            <h1 class="titreexperience">Mes expériences</h1>
+        </div>
+        <section class="timeline">
+            <div class="container">
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="timeline-img-header">
+                            <h2>Alternant en développement web</h2>
+                        </div>
+                        <div class="date">2020 - 2021</div>
+                        <p class="lieu">LIMON IT, Saint-Etienne (42)</p>
+                        <p class="desc"></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="timeline-img-header">
+                            <h2>Stage et CDD <br> Développement back-end</h2>
+                        </div>
+                        <div class="date">Avril 2020 - Juillet 2020</div>
+                        <p class="lieu">LIMON IT, Saint-Etienne (42)</p>
+                        <p class="desc"></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="timeline-img-header">
+                            <h2>Chargé évènementiel BDE</h2>
+                        </div>
+                        <div class="date">2018-2020</div>
+                       <p class="lieu">IUT, Le Puy-En-Velay (43)</p>
+                        <p class="desc"></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="timeline-img-header">
+                            <h2>Stage Informatique Industriel</h2>
+                        </div>
+                        <div class="date">2017 (1 semaine)</div>
+                        <p class="lieu">ERAI, Andrézieux-Bouthéon (42)</p>
+                        <p class="desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="contenu">
+                <h1 class="titrecompetence">Mon Portfolio</h1>
+                <div class=" text-center justify-content-center">
+                    <div class="publication">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
+                                <article>
+                                    <a href=""><img src="images/Projet_Verrerie/Projet_Verrerie_icone.jpg" alt=""></a>
+                                    <div class="content">
+                                        <div class="text" href="">
+                                            <p>Projet Verrerie</p><span>2020</span><br><br><a href="Projet_Verrerie.html">En voir +</a>
+                                        </div>
+                                </article>
+                            </div>
+                            <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
+                                <article>
+                                    <a href=""><img src="images/Underwater/Underwater_icone.jpg" alt=""></a>
+                                    <div class="content">
+                                        <div class="text" href="">
+                                            <p>Underwater</p><span>2020</span><br><br><a href="Underwater.html">En voir +</a>
+                                        </div>
+                                </article>
+                            </div>
+                            <div class="col-xl-4 col-md-12 align-items-center d-flex flex-column text-center justify-content-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
+                                <article>
+                                    <a href=""><img src="images/REEM/REEM_icone.jpg" alt=""></a>
+                                    <div class="content">
+                                        <div class="text" href="">
+                                            <p>REEM</p><span>2020</span><br><br><a href="REEM.html">En voir +</a>
+                                        </div>
+                                </article>
+                            </div>
+                           <!-- <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
+                                <article>
+                                    <a href=""><img src="images/LeBonCoin/LeBonCoin_icone.jpg" alt=""></a>
+                                    <div class="content">
+                                        <div class="text" href="">
+                                            <p>LeBonCoin</p><span>2019</span><br><br><a href="LeBonCoin.html">En voir +</a>
+                                        </div>
+                                </article>
+                            </div>
+                            <div class="col-xl-4 col-md-12  text-center justify-content-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
+                                <article>
+                                    <a href=""><img src="images/Fallen/Fallen_icone.jpg" alt=""></a>
+                                    <div class="content">
+                                        <div class="text" href="">
+                                            <p>Fallen</p><span>2019-2020</span><br><br><a href="Fallen.html">En voir +</a>
+                                        </div>
+                                </article>
+                            </div>-->
+                        </div>                        
+                        <div class="col-12 section-title2 text-center mx-auto">
+                            <a href="crea.html" class="text-lg-center liencv"> en voir +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lieuxcontact ">
+        <div class=" contact container" id="contact">
+            <h1 class="titrecontact"> me CONTACTer</h1>
+        </div>
+        <div class=" container contacter">
+            <div class="row">
+                <div class="col-12 ">
+                    <a href="mailto:clery.chassagnonpro@gmail.com" id="mail">clery.chassagnonpro@gmail.com
+                    </a><br>
+                    <a href="tel:+33786669916" id="num"> +33 7 86 66 99 16</a>
+                    <p id="ville">DUNIERES 43220 |
+                        Le Puy-En-Velay 43000 | Saint-Etienne 42000</p>
+                    <a href="https://www.linkedin.com/in/cl%C3%A9ry-chassagnon/" target=_blank> <i
+                            class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="https://github.com/CleryCHASSAGNON" target=_blank>
+                        <span style="color: black;">
+                            <i class="fab fa-github fa-lg"></i>
+                      </span></a>
+                    <p id="copyright">©2021 Cléry Chassagnon Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rellax.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f89bef66bf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
