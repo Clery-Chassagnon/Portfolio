@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Qualy Bold";
-  src: url("/font/Qualy-Bold.ttf") format("truetype");
+  src: url("/font/Qualy-Bold.woff") format("woff");
 }
 
 html {
